@@ -36,22 +36,22 @@ async/await to display the category title and one random clue from this category
 
 
 
-fetch ("http://jservice.io/api/category?id=1079")
-    .then(promisedResponse => promisedResponse.json())
-    .then(payload => {
-        let categoryTitle = payload.title
-        let clue = payload.clues[Math.floor(Math.random() * payload.clues.length)]
-        let answer
+// fetch ("http://jservice.io/api/category?id=1079")
+//     .then(promisedResponse => promisedResponse.json())
+//     .then(payload => {
+//         let categoryTitle = payload.title
+//         let clue = payload.clues[Math.floor(Math.random() * payload.clues.length)]
 
-            let Category = document.createElement("h3")
-            let question = document.createElement("div")
-            let questionNode = document.createTextNode(categoryTitle)
-            let clueNode = document.createTextNode(clue)
-            // let clueNode = document.createTextNode(clue)
-            question.appendChild(questionNode)
-            Category.appendChild(clueNode)
-            document.body.appendChild(container)
-        })
+//             let jeopardyMsg = 
+//             `Category: ${categoryTitle}\nQuestion: ${clue.question}`
+//             let container = document.createElement("div")
+//             let jeopardyNode = document.createTextNode(jeopardyMsg)
+//             let clueNode = document.createTextNode(clue)
+//             container.appendChild(jeopardyNode)
+//             container.appendChild(clueNode)
+//             document.body.appendChild(container)
+//             console.log(container)
+//         })
 
 
 // fetch ("http://jservice.io/api/category?id=1079")
